@@ -14,10 +14,10 @@ interface RendererInterface
      *
      * @since [*next-version*]
      *
-     * @param $context The rendering context.
+     * @param mixed|null $context The rendering context.
      *  Something that can provide more information on how to perform the rendering.
      *
      * @return string|\Dhii\Util\String\StringableInterface The output.
      */
-    public function render($context);
+    public function render($context = null);
 }
