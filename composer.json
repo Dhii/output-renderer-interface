@@ -1,0 +1,26 @@
+{
+    "name": "dhii/output-renderer-interface",
+    "description": "An interface for objects that can perform rendering.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-php-5.3",
+        "phpunit/phpunit": "4.*",
+        "codeclimate/php-test-reporter": "dev-master",
+        "ptrofimov/xpmock": "^1.1",
+        "dhii/stringable-interface": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Output\\": "src/"
+        }
+    }
+}
