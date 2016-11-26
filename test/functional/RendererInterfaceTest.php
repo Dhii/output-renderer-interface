@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Output;
+namespace Dhii\Output\FuncTest;
 
 /**
  * Tests {@see \Dhii\Output\RendererInterface}.
