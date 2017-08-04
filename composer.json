@@ -10,7 +10,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php": "^5.3 | ^7.0"
+    },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-php-5.3",
         "phpunit/phpunit": "4.*",
