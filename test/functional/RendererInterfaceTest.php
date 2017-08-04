@@ -3,13 +3,14 @@
 namespace Dhii\Output\FuncTest;
 
 use Dhii\Output\RendererInterface;
+use Xpmock\TestCase;
 
 /**
  * Tests {@see \Dhii\Output\RendererInterface}.
  *
  * @since [*next-version*]
  */
-class RendererInterfaceTest extends \Xpmock\TestCase
+class RendererInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
