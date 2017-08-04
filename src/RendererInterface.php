@@ -2,6 +2,8 @@
 
 namespace Dhii\Output;
 
+use Dhii\Util\String\StringableInterface as Stringable;
+
 /**
  * Something that can render output.
  *
@@ -14,10 +16,9 @@ interface RendererInterface
      *
      * @since [*next-version*]
      *
-     * @param mixed|null $context The rendering context.
-     *  Something that can provide more information on how to perform the rendering.
+     * @param mixed|null $context The context; something that can provide more information on how to perform rendering.
      *
-     * @return string|\Dhii\Util\String\StringableInterface The output.
+     * @return string|Stringable The output.
      */
     public function render($context = null);
 }
