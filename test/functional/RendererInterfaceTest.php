@@ -13,6 +13,13 @@ use Xpmock\TestCase;
 class RendererInterfaceTest extends TestCase
 {
     /**
+     * The class name of the test subject.
+     *
+     * @since [*next-version*]
+     */
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RendererInterface';
+
+    /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
@@ -21,7 +28,7 @@ class RendererInterfaceTest extends TestCase
      */
     public function createInstance()
     {
-        $mock = $this->mock('Dhii\\Output\\RendererInterface')
+        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->render()
             ->new();
 
@@ -38,7 +45,7 @@ class RendererInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            'Dhii\\Output\\RendererInterface', $subject,
+            static::TEST_SUBJECT_CLASSNAME, $subject,
             'Could not create a valid instance of the test subject.'
         );
     }
