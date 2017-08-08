@@ -10,6 +10,13 @@ namespace Dhii\Output\FuncTest;
 class RendererInterfaceTest extends \Xpmock\TestCase
 {
     /**
+     * The class name of the test subject.
+     *
+     * @since [*next-version*]
+     */
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RendererInterface';
+
+    /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
@@ -18,7 +25,7 @@ class RendererInterfaceTest extends \Xpmock\TestCase
      */
     public function createInstance()
     {
-        $mock = $this->mock('Dhii\\Output\\RendererInterface')
+        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->render()
             ->new();
 
@@ -34,6 +41,8 @@ class RendererInterfaceTest extends \Xpmock\TestCase
     {
         $subject = $this->createInstance();
 
-        $this->assertInstanceOf('Dhii\\Output\\RendererInterface', $subject, 'Could not create a valid instance of the test subject.');
+        $this->assertInstanceOf(
+            static::TEST_SUBJECT_CLASSNAME, $subject,
+            'Could not create a valid instance of the test subject.');
     }
 }
