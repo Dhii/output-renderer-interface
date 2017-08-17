@@ -1,12 +1,12 @@
 <?php
 
-namespace Dhii\Output\FuncTest\FuncTest;
+namespace Dhii\Output\FuncTest;
 
 use Dhii\Output\ContextAwareInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Output\FuncTest\ContextAwareInterface}.
+ * Tests {@see \Dhii\Output\ContextAwareInterface}.
  *
  * @since [*next-version*]
  */
@@ -17,7 +17,7 @@ class ContextAwareInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\FuncTest\ContextAwareInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\ContextAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
