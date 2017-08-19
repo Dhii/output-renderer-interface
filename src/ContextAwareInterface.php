@@ -14,7 +14,7 @@ interface ContextAwareInterface
      *
      * @since [*next-version*]
      *
-     * @return mixed
+     * @return mixed The context.
      */
     public function getContext();
 }
