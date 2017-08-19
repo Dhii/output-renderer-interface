@@ -47,7 +47,7 @@ class ContextAwareInterfaceTest extends TestCase
         $this->assertInstanceOf(
             static::TEST_SUBJECT_CLASSNAME,
             $subject,
-            'Subject is not a valid instance'
+            'Could not create a valid instance of the test subject.'
         );
     }
 }
