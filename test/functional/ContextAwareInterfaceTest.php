@@ -2,35 +2,35 @@
 
 namespace Dhii\Output\FuncTest;
 
-use Dhii\Output\RendererInterface;
+use Dhii\Output\ContextAwareInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Output\RendererInterface}.
+ * Tests {@see \Dhii\Output\ContextAwareInterface}.
  *
  * @since [*next-version*]
  */
-class RendererInterfaceTest extends TestCase
+class ContextAwareInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RendererInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\ContextAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return RendererInterface A new instance of the test subject.
+     * @return ContextAwareInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->render()
-            ->new();
+                     ->getContext()
+                     ->new();
 
         return $mock;
     }
@@ -45,7 +45,8 @@ class RendererInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject,
+            static::TEST_SUBJECT_CLASSNAME,
+            $subject,
             'Could not create a valid instance of the test subject.'
         );
     }

@@ -2,37 +2,36 @@
 
 namespace Dhii\Output\FuncTest;
 
-use Dhii\Output\RendererInterface;
+use Dhii\Output\RendererAwareInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Output\RendererInterface}.
+ * Tests {@see \Dhii\Output\RendererAwareInterface}.
  *
  * @since [*next-version*]
  */
-class RendererInterfaceTest extends TestCase
+class RendererAwareInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RendererInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RendererAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return RendererInterface A new instance of the test subject.
+     * @return RendererAwareInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->render()
-            ->new();
+                     ->getRenderer();
 
-        return $mock;
+        return $mock->new();
     }
 
     /**
