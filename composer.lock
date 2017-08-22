@@ -4,8 +4,94 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0557009a130c230ad3eacfbe13ac05e8",
-    "packages": [],
+    "content-hash": "bb523ee48622e9fa3ab252ca70c25a5f",
+    "packages": [
+        {
+            "name": "dhii/exception-interface",
+            "version": "dev-task/initial-interfaces",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/exception-interface.git",
+                "reference": "e74d249b9d62539c1c907c55a063e35aa1729927"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/exception-interface/zipball/e74d249b9d62539c1c907c55a063e35aa1729927",
+                "reference": "e74d249b9d62539c1c907c55a063e35aa1729927",
+                "shasum": ""
+            },
+            "require": {
+                "dhii/stringable-interface": "^0.1",
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "^0.1",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Exception\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interfaces for most common exceptions",
+            "time": "2017-08-22 09:08:10"
+        },
+        {
+            "name": "dhii/stringable-interface",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/stringable-interface.git",
+                "reference": "b6653905eef2ebf377749feb80a6d18abbe913ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/stringable-interface/zipball/b6653905eef2ebf377749feb80a6d18abbe913ef",
+                "reference": "b6653905eef2ebf377749feb80a6d18abbe913ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Util\\String\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interoperability interface for objects that can be cast to string",
+            "time": "2017-01-23T15:08:20+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "codeclimate/php-test-reporter",
@@ -164,48 +250,6 @@
             ],
             "description": "A default PHP CS Fixer config implementation",
             "time": "2016-09-03 14:45:03"
-        },
-        {
-            "name": "dhii/stringable-interface",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Dhii/stringable-interface.git",
-                "reference": "b6653905eef2ebf377749feb80a6d18abbe913ef"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/stringable-interface/zipball/b6653905eef2ebf377749feb80a6d18abbe913ef",
-                "reference": "b6653905eef2ebf377749feb80a6d18abbe913ef",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3 | ^7.0"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "<=0.3.2",
-                "dhii/php-cs-fixer-config": "dev-php-5.3",
-                "phpunit/phpunit": "^4.8",
-                "ptrofimov/xpmock": "^1.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Dhii\\Util\\String\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dhii Team",
-                    "email": "development@dhii.co"
-                }
-            ],
-            "description": "Interoperability interface for objects that can be cast to string",
-            "time": "2017-01-23 15:08:20"
         },
         {
             "name": "doctrine/instantiator",
@@ -2244,9 +2288,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dhii/exception-interface": 20,
         "dhii/php-cs-fixer-config": 20,
-        "codeclimate/php-test-reporter": 20,
-        "dhii/stringable-interface": 20
+        "codeclimate/php-test-reporter": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

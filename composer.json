@@ -11,14 +11,18 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": "^5.3 | ^7.0"
+        "php": "^5.3 | ^7.0",
+        "dhii/exception-interface": "dev-task/initial-interfaces"
     },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-php-5.3",
         "phpunit/phpunit": "4.*",
         "codeclimate/php-test-reporter": "dev-master",
         "ptrofimov/xpmock": "^1.1",
-        "dhii/stringable-interface": "dev-master"
+        "dhii/stringable-interface": "^0.1"
+    },
+    "suggest": {
+        "dhii/stringable-interface": "To cater for all possible rendering output types"
     },
     "autoload": {
         "psr-4": {
