@@ -2,6 +2,7 @@
 
 namespace Dhii\Output\Exception;
 
+use Dhii\Exception\ThrowableInterface;
 use Dhii\Output\RendererAwareInterface;
 
 /**
@@ -9,6 +10,8 @@ use Dhii\Output\RendererAwareInterface;
  *
  * @since [*next-version*]
  */
-interface RendererExceptionInterface extends RendererAwareInterface
+interface RendererExceptionInterface extends
+        ThrowableInterface,
+        RendererAwareInterface
 {
 }

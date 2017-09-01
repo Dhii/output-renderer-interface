@@ -2,6 +2,7 @@
 
 namespace Dhii\Output\Exception;
 
+use Dhii\Exception\ThrowableInterface;
 use Dhii\Output\ContextAwareInterface;
 
 /**
@@ -10,6 +11,7 @@ use Dhii\Output\ContextAwareInterface;
  * @since [*next-version*]
  */
 interface CouldNotRenderExceptionInterface extends
+    ThrowableInterface,
     RendererExceptionInterface,
     ContextAwareInterface
 {
