@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/Dhii/output-renderer-interface.svg?branch=master)](https://travis-ci.org/Dhii/output-renderer-interface)
 [![Code Climate](https://codeclimate.com/github/Dhii/output-renderer-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/output-renderer-interface)
 [![Test Coverage](https://codeclimate.com/github/Dhii/output-renderer-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/output-renderer-interface/coverage)
+[![Latest Stable Version](https://poser.pugx.org/dhii/output-renderer-interface/version)](https://packagist.org/packages/dhii/output-renderer-interface)
 [![This package complies with Dhii standards](https://img.shields.io/badge/Dhii-Compliant-green.svg?style=flat-square)][Dhii]
 
 Interfaces for rendering interoperability.
