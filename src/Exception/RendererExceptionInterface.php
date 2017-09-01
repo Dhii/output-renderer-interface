@@ -8,7 +8,7 @@ use Dhii\Output\RendererAwareInterface;
 /**
  * Represents an exception that is thrown when a renderer encounters an error.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface RendererExceptionInterface extends
         ThrowableInterface,

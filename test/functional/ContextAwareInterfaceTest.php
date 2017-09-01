@@ -8,21 +8,21 @@ use Xpmock\TestCase;
 /**
  * Tests {@see \Dhii\Output\ContextAwareInterface}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class ContextAwareInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\ContextAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return ContextAwareInterface
      */
@@ -38,7 +38,7 @@ class ContextAwareInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {

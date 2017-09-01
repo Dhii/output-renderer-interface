@@ -5,14 +5,14 @@ namespace Dhii\Output;
 /**
  * Something that is aware of a context.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ContextAwareInterface
 {
     /**
      * Retrieves the context.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return mixed The context.
      */

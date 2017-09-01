@@ -9,14 +9,14 @@ use Dhii\Output\Exception\RendererExceptionInterface;
 /**
  * Something that can render output.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface RendererInterface
 {
     /**
      * Produce output based on the specifics of this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param mixed|null $context The context; something that can provide more information on how to perform rendering.
      *
