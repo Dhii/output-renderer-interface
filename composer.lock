@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed78c181ccd5953b979013f44a190273",
+    "content-hash": "967bf690841df0cc1140ede18c74bc82",
     "packages": [
         {
             "name": "dhii/exception-interface",
-            "version": "dev-task/initial-interfaces",
+            "version": "v0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/exception-interface.git",
-                "reference": "e74d249b9d62539c1c907c55a063e35aa1729927"
+                "reference": "3abaa60064c1ded0fdec03d8a38f2e014c41f1b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/exception-interface/zipball/e74d249b9d62539c1c907c55a063e35aa1729927",
-                "reference": "e74d249b9d62539c1c907c55a063e35aa1729927",
+                "url": "https://api.github.com/repos/Dhii/exception-interface/zipball/3abaa60064c1ded0fdec03d8a38f2e014c41f1b2",
+                "reference": "3abaa60064c1ded0fdec03d8a38f2e014c41f1b2",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +26,7 @@
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "<=0.3.2",
-                "dhii/php-cs-fixer-config": "^0.1",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
                 "phpunit/phpunit": "^4.8",
                 "ptrofimov/xpmock": "^1.1"
             },
@@ -47,7 +47,7 @@
                 }
             ],
             "description": "Interfaces for most common exceptions",
-            "time": "2017-08-22 09:08:10"
+            "time": "2017-09-01T16:37:25+00:00"
         },
         {
             "name": "dhii/stringable-interface",
@@ -2214,7 +2214,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dhii/exception-interface": 20,
         "dhii/php-cs-fixer-config": 20,
         "codeclimate/php-test-reporter": 20
     },
