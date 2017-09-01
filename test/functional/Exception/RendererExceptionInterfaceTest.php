@@ -29,7 +29,16 @@ class RendererExceptionInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                     ->getRenderer();
+                 ->getRenderer()
+                // ThrowableInterface
+                ->getMessage()
+                ->getCode()
+                ->getFile()
+                ->getLine()
+                ->getTrace()
+                ->getTraceAsString()
+                ->getPrevious()
+                ->__toString();
 
         return $mock->new();
     }

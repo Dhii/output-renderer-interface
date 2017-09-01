@@ -29,8 +29,17 @@ class CouldNotRenderExceptionInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                     ->getRenderer()
-                     ->getContext();
+                ->getRenderer()
+                ->getContext()
+                // ThrowableInterface
+                ->getMessage()
+                ->getCode()
+                ->getFile()
+                ->getLine()
+                ->getTrace()
+                ->getTraceAsString()
+                ->getPrevious()
+                ->__toString();
 
         return $mock->new();
     }
