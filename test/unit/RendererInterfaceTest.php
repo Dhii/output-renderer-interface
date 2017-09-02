@@ -1,12 +1,12 @@
 <?php
 
-namespace Dhii\Output\FuncTest;
+namespace Dhii\Output\UnitTest;
 
-use Dhii\Output\RendererInterface;
+use Dhii\Output\RendererInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Output\RendererInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
@@ -24,7 +24,7 @@ class RendererInterfaceTest extends TestCase
      *
      * @since 0.1
      *
-     * @return RendererInterface A new instance of the test subject.
+     * @return TestSubject A new instance of the test subject.
      */
     public function createInstance()
     {
