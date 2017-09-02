@@ -2,7 +2,7 @@
 
 namespace Dhii\Output\UnitTest;
 
-use Dhii\Output\RenderableInterface as TestSubject;
+use Dhii\Output\RenderCapableInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
@@ -10,14 +10,14 @@ use Xpmock\TestCase;
  *
  * @since [*next-version*]
  */
-class RenderableInterfaceTest extends TestCase
+class RenderCapableInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RenderableInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RenderCapableInterface';
 
     /**
      * Creates a new instance of the test subject.

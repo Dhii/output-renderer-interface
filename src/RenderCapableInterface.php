@@ -7,7 +7,7 @@ namespace Dhii\Output;
  *
  * @since [*next-version*]
  */
-interface RenderableInterface
+interface RenderCapableInterface
 {
     /**
      * Produces output.

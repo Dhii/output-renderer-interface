@@ -2,7 +2,7 @@
 
 namespace Dhii\Output\Exception\UnitTest;
 
-use Dhii\Output\Exception\RenderableAwareExceptionInterface as TestSubject;
+use Dhii\Output\Exception\RenderCapableAwareExceptionInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
@@ -10,14 +10,14 @@ use Xpmock\TestCase;
  *
  * @since 0.1
  */
-class RenderableAwareExceptionInterfaceTest extends TestCase
+class RenderCapableAwareExceptionInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\RenderableAwareExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\RenderCapableAwareExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -29,7 +29,7 @@ class RenderableAwareExceptionInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                 ->getRenderable()
+                 ->getRenderCapable()
                 // ThrowableInterface
                 ->getMessage()
                 ->getCode()
@@ -58,7 +58,7 @@ class RenderableAwareExceptionInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\Output\RenderableAwareInterface', $subject,
+            'Dhii\Output\RenderCapableAwareInterface', $subject,
             'Subject does not extend expected parent interface'
         );
 

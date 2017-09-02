@@ -3,21 +3,21 @@
 namespace Dhii\Output\UnitTest;
 
 use Xpmock\TestCase;
-use Dhii\Output\RenderableAwareInterface as TestSubject;
+use Dhii\Output\RenderCapableAwareInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
-class RenderableAwareInterfaceTest extends TestCase
+class RenderCapableAwareInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RenderableAwareInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RenderCapableAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
@@ -29,7 +29,7 @@ class RenderableAwareInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                     ->getRenderable();
+                     ->getRenderCapable();
 
         return $mock->new();
     }

@@ -29,7 +29,7 @@ class ContextAwareRenderExceptionInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->getRenderable()
+                ->getRenderCapable()
                 ->getContext()
                 // ThrowableInterface
                 ->getMessage()
