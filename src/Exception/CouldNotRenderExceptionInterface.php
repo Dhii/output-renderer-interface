@@ -2,17 +2,11 @@
 
 namespace Dhii\Output\Exception;
 
-use Dhii\Exception\ThrowableInterface;
-use Dhii\Output\ContextAwareInterface;
-
 /**
- * Represents an exception thrown when the renderer fails to render the contents.
+ * Represents an exception thrown when the rendererable fails to render.
  *
  * @since 0.1
  */
-interface CouldNotRenderExceptionInterface extends
-    ThrowableInterface,
-    RendererExceptionInterface,
-    ContextAwareInterface
+interface CouldNotRenderExceptionInterface extends RenderableAwareExceptionInterface
 {
 }
