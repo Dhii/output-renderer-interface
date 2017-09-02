@@ -29,7 +29,7 @@ class CouldNotRenderExceptionInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                 ->getRenderCapable()
+                 ->getRenderer()
                 // ThrowableInterface
                 ->getMessage()
                 ->getCode()
@@ -58,7 +58,7 @@ class CouldNotRenderExceptionInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\Output\Exception\RenderCapableAwareExceptionInterface', $subject,
+            'Dhii\Output\Exception\RendererAwareExceptionInterface', $subject,
             'Subject does not extend expected parent interface'
         );
     }

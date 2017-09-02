@@ -10,7 +10,7 @@ use Dhii\Util\String\StringableInterface;
  * @since [*next-version*]
  */
 interface BlockInterface extends
-        RenderCapableInterface,
+        RendererInterface,
         StringableInterface
 {
 }

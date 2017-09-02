@@ -7,6 +7,6 @@ namespace Dhii\Output\Exception;
  *
  * @since 0.1
  */
-interface CouldNotRenderExceptionInterface extends RenderCapableAwareExceptionInterface
+interface CouldNotRenderExceptionInterface extends RendererAwareExceptionInterface
 {
 }

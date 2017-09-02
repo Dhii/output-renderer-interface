@@ -7,14 +7,14 @@ namespace Dhii\Output;
  *
  * @since [*next-version*]
  */
-interface RenderCapableAwareInterface
+interface RendererAwareInterface
 {
     /**
      * Retrieves the render-capable object that is associated with this instance.
      *
      * @since [*next-version*]
      *
-     * @return RenderCapableInterface The render-capable object.
+     * @return RendererInterface The render-capable object.
      */
-    public function getRenderCapable();
+    public function getRenderer();
 }

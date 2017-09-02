@@ -56,7 +56,13 @@ class BlockInterfaceTest extends TestCase
         $this->assertInstanceOf(
             'Dhii\Util\String\StringableInterface',
             $subject,
-            'Subject is not a valid StringableInterface instance.'
+            'Subject does not implement required interface'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Output\RendererInterface',
+            $subject,
+            'Subject does not implement required interface'
         );
     }
 
