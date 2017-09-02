@@ -2,29 +2,29 @@
 
 namespace Dhii\Output\UnitTest;
 
-use Dhii\Output\RenderableInterface;
+use Dhii\Output\RenderableInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Output\RenderableInterface}.
+ * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
 class RenderableInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RenderableInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
-     * @return RenderableInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
@@ -37,7 +37,7 @@ class RenderableInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
