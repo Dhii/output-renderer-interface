@@ -58,7 +58,7 @@ class CouldNotRenderExceptionInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\Output\Exception\RendererAwareExceptionInterface', $subject,
+            'Dhii\Output\Exception\RendererExceptionInterface', $subject,
             'Subject does not extend expected parent interface'
         );
     }

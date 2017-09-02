@@ -2,7 +2,7 @@
 
 namespace Dhii\Output\Exception\UnitTest;
 
-use Dhii\Output\Exception\RendererAwareExceptionInterface as TestSubject;
+use Dhii\Output\Exception\RendererExceptionInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
@@ -10,14 +10,14 @@ use Xpmock\TestCase;
  *
  * @since 0.1
  */
-class RendererAwareExceptionInterfaceTest extends TestCase
+class RendererExceptionInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\RendererAwareExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\RendererExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.

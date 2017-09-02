@@ -10,14 +10,14 @@ use Xpmock\TestCase;
  *
  * @since 0.1
  */
-class ContextAwareRenderExceptionInterfaceTest extends TestCase
+class ContextRenderExceptionInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\ContextAwareRenderExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\ContextRenderExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.

@@ -6,11 +6,11 @@ use Dhii\Output\RendererAwareInterface;
 use Dhii\Exception\ThrowableInterface;
 
 /**
- * An exception that occurs in relation to a render capable object.
+ * An exception that occurs in relation to a renderer.
  *
  * @since [*next-version*]
  */
-interface RendererAwareExceptionInterface extends
+interface RendererExceptionInterface extends
         ThrowableInterface,
         RendererAwareInterface
 {

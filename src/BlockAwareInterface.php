@@ -3,7 +3,7 @@
 namespace Dhii\Output;
 
 /**
- * Something that is aware of a block.
+ * Something that can have a block retrieved from it.
  *
  * @since [*next-version*]
  */
