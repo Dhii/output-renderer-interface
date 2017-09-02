@@ -1,12 +1,12 @@
 <?php
 
-namespace Dhii\Output\FuncTest;
+namespace Dhii\Output\UnitTest;
 
-use Dhii\Output\ContextAwareInterface;
+use Dhii\Output\ContextAwareInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Output\ContextAwareInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
@@ -24,7 +24,7 @@ class ContextAwareInterfaceTest extends TestCase
      *
      * @since 0.1
      *
-     * @return ContextAwareInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
