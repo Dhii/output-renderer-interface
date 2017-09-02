@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "967bf690841df0cc1140ede18c74bc82",
+    "content-hash": "b16836954980db2791d79793c064a896",
     "packages": [
         {
             "name": "dhii/exception-interface",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/exception-interface.git",
-                "reference": "3abaa60064c1ded0fdec03d8a38f2e014c41f1b2"
+                "reference": "fe64b30f67830474683357f77dc4a097bf84767e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/exception-interface/zipball/3abaa60064c1ded0fdec03d8a38f2e014c41f1b2",
-                "reference": "3abaa60064c1ded0fdec03d8a38f2e014c41f1b2",
+                "url": "https://api.github.com/repos/Dhii/exception-interface/zipball/fe64b30f67830474683357f77dc4a097bf84767e",
+                "reference": "fe64b30f67830474683357f77dc4a097bf84767e",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +47,7 @@
                 }
             ],
             "description": "Interfaces for most common exceptions",
-            "time": "2017-09-01T16:37:25+00:00"
+            "time": "2017-09-01T18:00:26+00:00"
         },
         {
             "name": "dhii/stringable-interface",
@@ -150,7 +150,7 @@
                 "codeclimate",
                 "coverage"
             ],
-            "time": "2017-06-01 13:19:55"
+            "time": "2017-06-01T13:19:55+00:00"
         },
         {
             "name": "dhii/php-cs-fixer-config",
@@ -190,7 +190,7 @@
                 }
             ],
             "description": "A default PHP CS Fixer config implementation",
-            "time": "2016-09-03 14:45:03"
+            "time": "2016-09-03T14:45:03+00:00"
         },
         {
             "name": "doctrine/instantiator",

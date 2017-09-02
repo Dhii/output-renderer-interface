@@ -1,12 +1,12 @@
 <?php
 
-namespace Dhii\Output\Exception\FuncTest;
+namespace Dhii\Output\Exception\UnitTest;
 
-use Dhii\Output\Exception\RendererExceptionInterface;
+use Dhii\Output\Exception\RendererExceptionInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Output\Exception\RendererExceptionInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
@@ -15,16 +15,16 @@ class RendererExceptionInterfaceTest extends TestCase
     /**
      * The class name of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\RendererExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
-     * @return RendererExceptionInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
@@ -46,7 +46,7 @@ class RendererExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
@@ -59,6 +59,11 @@ class RendererExceptionInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             'Dhii\Output\RendererAwareInterface', $subject,
+            'Subject does not extend expected parent interface'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Exception\ThrowableInterface', $subject,
             'Subject does not extend expected parent interface'
         );
     }

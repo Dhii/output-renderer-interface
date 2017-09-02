@@ -2,13 +2,13 @@
 
 namespace Dhii\Output\Exception;
 
-use Dhii\Exception\ThrowableInterface;
 use Dhii\Output\RendererAwareInterface;
+use Dhii\Exception\ThrowableInterface;
 
 /**
- * Represents an exception that is thrown when a renderer encounters an error.
+ * An exception that occurs in relation to a renderer.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
 interface RendererExceptionInterface extends
         ThrowableInterface,

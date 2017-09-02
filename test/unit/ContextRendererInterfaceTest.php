@@ -1,30 +1,30 @@
 <?php
 
-namespace Dhii\Output\FuncTest;
+namespace Dhii\Output\UnitTest;
 
-use Dhii\Output\RendererInterface;
+use Dhii\Output\ContextRendererInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see \Dhii\Output\RendererInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
-class RendererInterfaceTest extends TestCase
+class ContextRendererInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RendererInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\ContextRendererInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return RendererInterface A new instance of the test subject.
+     * @return TestSubject A new instance of the test subject.
      */
     public function createInstance()
     {

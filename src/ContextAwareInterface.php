@@ -3,7 +3,7 @@
 namespace Dhii\Output;
 
 /**
- * Something that is aware of a context.
+ * Something that can have a context retrieved from it.
  *
  * @since 0.1
  */

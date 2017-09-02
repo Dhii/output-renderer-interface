@@ -16,20 +16,32 @@ anything that can render output.
 
 Therefore, output renderers MUST implement `RendererInterface`. If
 `RendererInterface#render()` is unable to produce output,
-a `CouldNotRenderExceptionInterface` must be thrown.
+a `CouldNotRenderExceptionInterface` MUST be thrown.
 
-- [`RendererInterface`] - Represents a renderer, i.e. something that can produce output, optionally based on context.
-- [`RendererAwareInterface`] - Something that can have a renderer retrieved.
+### Interfaces
+- [`RendererInterface`] - Represents a renderer, i.e. something that can produce output.
+- [`ContextRendererInterface`] - A renderer that uses context to render.
+- [`BlockInterface`] - A renderer that has access to the render context, and is also [stringable].
+- [`RendererAwareInterface`] - Something that exposes a renderer.
 - [`ContextAwareInterface`] - Something that can have a rendering context retrieved.
+- [`BlockAwareInterface`] - Something that can have a block retrieved.
 - [`RendererExceptionInterface`] - An exception that occurs in relation to a renderer, and is aware of it.
-- [`CouldNotRenderExceptionInterface`] - A specialized renderer exception that signals problems during rendering, and is additionally aware of rendering context.
+- [`CouldNotRenderExceptionInterface`] - A specialized renderer exception that signals problems during rendering,
+and is additionally aware of rendering context.
+- [`ContextRenderExceptionInterface`] - A specialized "could-not-render" exception that is aware
+of the rendering context.
 
 
 
 [Dhii]:                                 https://github.com/Dhii/dhii
+[stringable]:                           https://github.com/Dhii/stringable-interface
 
 [`RendererInterface`]:                  src/RendererInterface.php
+[`ContextRendererInterface`]:           src/ContextRendererInterface.php
+[`BlockInterface`]:                     src/BlockInterface.php
 [`RendererAwareInterface`]:             src/RendererAwareInterface.php
 [`ContextAwareInterface`]:              src/ContextAwareInterface.php
+[`BlockAwareInterface`]:                src/BlockAwareInterface.php
 [`RendererExceptionInterface`]:         src/Exception/RendererExceptionInterface.php
 [`CouldNotRenderExceptionInterface`]:   src/Exception/CouldNotRenderExceptionInterface.php
+[`ContextRenderExceptionInterface`]:    src/Exception/ContextRenderExceptionInterface.php

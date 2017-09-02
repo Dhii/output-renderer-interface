@@ -1,43 +1,44 @@
 <?php
 
-namespace Dhii\Output\FuncTest;
+namespace Dhii\Block\UnitTest;
 
-use Dhii\Output\RendererAwareInterface;
 use Xpmock\TestCase;
+use Dhii\Output\BlockAwareInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Output\RendererAwareInterface}.
+ * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
-class RendererAwareInterfaceTest extends TestCase
+class BlockAwareInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RendererAwareInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\BlockAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
-     * @return RendererAwareInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                     ->getRenderer();
+            ->getBlock()
+            ->new();
 
-        return $mock->new();
+        return $mock;
     }
 
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
@@ -45,7 +46,7 @@ class RendererAwareInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             static::TEST_SUBJECT_CLASSNAME, $subject,
-            'Could not create a valid instance of the test subject.'
+            'A valid instance of the test subject could not be created.'
         );
     }
 }

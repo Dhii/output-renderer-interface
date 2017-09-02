@@ -2,28 +2,25 @@
 
 namespace Dhii\Output;
 
-use Dhii\Util\String\StringableInterface as Stringable;
 use Dhii\Output\Exception\CouldNotRenderExceptionInterface;
 use Dhii\Output\Exception\RendererExceptionInterface;
 
 /**
- * Something that can render output.
+ * Something that can produce output.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
 interface RendererInterface
 {
     /**
-     * Produce output based on the specifics of this instance.
+     * Produces output.
      *
-     * @since 0.1
-     *
-     * @param mixed|null $context The context; something that can provide more information on how to perform rendering.
+     * @since [*next-version*]
      *
      * @throws CouldNotRenderExceptionInterface If cannot render.
      * @throws RendererExceptionInterface       Any other problem related to the renderer.
      *
      * @return string|Stringable The output.
      */
-    public function render($context = null);
+    public function render();
 }

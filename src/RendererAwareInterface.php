@@ -3,18 +3,18 @@
 namespace Dhii\Output;
 
 /**
- * Something that is aware of a renderer.
+ * Something that can have a renderer retrieved from it.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
 interface RendererAwareInterface
 {
     /**
-     * Retrieves the renderer for this instance.
+     * Retrieves the renderer that is associated with this instance.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
-     * @return RendererInterface
+     * @return RendererInterface The renderer.
      */
     public function getRenderer();
 }
