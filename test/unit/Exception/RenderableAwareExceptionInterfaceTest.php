@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Output\Exception\FuncTest;
+namespace Dhii\Output\Exception\UnitTest;
 
 use Dhii\Output\Exception\RenderableAwareExceptionInterface as TestSubject;
 use Xpmock\TestCase;
