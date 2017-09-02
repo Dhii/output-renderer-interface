@@ -2,7 +2,7 @@
 
 namespace Dhii\Output\UnitTest;
 
-use Dhii\Output\RendererInterface as TestSubject;
+use Dhii\Output\ContextRendererInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
@@ -10,14 +10,14 @@ use Xpmock\TestCase;
  *
  * @since 0.1
  */
-class RendererInterfaceTest extends TestCase
+class ContextRendererInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\RendererInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\ContextRendererInterface';
 
     /**
      * Creates a new instance of the test subject.

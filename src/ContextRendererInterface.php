@@ -11,7 +11,7 @@ use Dhii\Output\Exception\RenderCapableAwareExceptionInterface;
  *
  * @since 0.1
  */
-interface RendererInterface extends RenderCapableInterface
+interface ContextRendererInterface extends RenderCapableInterface
 {
     /**
      * Produce output based on the specifics of this instance.
