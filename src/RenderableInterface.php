@@ -14,8 +14,8 @@ interface RenderableInterface
      *
      * @since [*next-version*]
      *
-     * @throws CouldNotRenderExceptionInterface If cannot render.
-     * @throws RendererExceptionInterface       Any other problem related to the renderer.
+     * @throws CouldNotRenderExceptionInterface  If cannot render.
+     * @throws RenderableAwareExceptionInterface Any other problem related to the renderer.
      *
      * @return string|Stringable The output.
      */
