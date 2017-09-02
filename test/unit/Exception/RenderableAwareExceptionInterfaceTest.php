@@ -61,5 +61,10 @@ class RenderableAwareExceptionInterfaceTest extends TestCase
             'Dhii\Output\RenderableAwareInterface', $subject,
             'Subject does not extend expected parent interface'
         );
+
+        $this->assertInstanceOf(
+            'Dhii\Exception\ThrowableInterface', $subject,
+            'Subject does not extend expected parent interface'
+        );
     }
 }
