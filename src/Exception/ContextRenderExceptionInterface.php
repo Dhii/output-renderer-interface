@@ -8,7 +8,7 @@ use Dhii\Output\ContextRendererInterface;
 /**
  * An exception that occurs when cannot render with a context.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ContextRenderExceptionInterface extends
     CouldNotRenderExceptionInterface,
@@ -17,7 +17,7 @@ interface ContextRenderExceptionInterface extends
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1
      * 
      * @return ContextRendererInterface The renderer.
      */

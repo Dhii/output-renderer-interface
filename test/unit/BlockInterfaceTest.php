@@ -8,21 +8,21 @@ use Xpmock\TestCase;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class BlockInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\\Output\\BlockInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string $output
      *
@@ -41,7 +41,7 @@ class BlockInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {
@@ -69,7 +69,7 @@ class BlockInterfaceTest extends TestCase
     /**
      * Tests whether the block can be cast into a string.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCastToString()
     {

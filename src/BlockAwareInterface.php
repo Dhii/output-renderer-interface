@@ -5,14 +5,14 @@ namespace Dhii\Output;
 /**
  * Something that can have a block retrieved from it.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface BlockAwareInterface
 {
     /**
      * Retrieves the block associated with this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return BlockInterface
      */

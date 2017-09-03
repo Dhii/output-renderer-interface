@@ -8,7 +8,7 @@ use Dhii\Exception\ThrowableInterface;
 /**
  * An exception that occurs in relation to a renderer.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface RendererExceptionInterface extends
         ThrowableInterface,

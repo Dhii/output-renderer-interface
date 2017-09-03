@@ -5,14 +5,14 @@ namespace Dhii\Output;
 /**
  * Something that can have a renderer retrieved from it.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface RendererAwareInterface
 {
     /**
      * Retrieves the renderer that is associated with this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return RendererInterface The renderer.
      */

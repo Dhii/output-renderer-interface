@@ -8,14 +8,14 @@ use Dhii\Output\Exception\RendererExceptionInterface;
 /**
  * Something that can produce output.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface RendererInterface
 {
     /**
      * Produces output.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @throws CouldNotRenderExceptionInterface If cannot render.
      * @throws RendererExceptionInterface       Any other problem related to the renderer.
