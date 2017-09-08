@@ -1,7 +1,47 @@
-## Renderer Interface ##
+# Output - Renderer - Interface
 [![Build Status](https://travis-ci.org/Dhii/output-renderer-interface.svg?branch=master)](https://travis-ci.org/Dhii/output-renderer-interface)
 [![Code Climate](https://codeclimate.com/github/Dhii/output-renderer-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/output-renderer-interface)
 [![Test Coverage](https://codeclimate.com/github/Dhii/output-renderer-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/output-renderer-interface/coverage)
+[![Latest Stable Version](https://poser.pugx.org/dhii/output-renderer-interface/version)](https://packagist.org/packages/dhii/output-renderer-interface)
+[![This package complies with Dhii standards](https://img.shields.io/badge/Dhii-Compliant-green.svg?style=flat-square)][Dhii]
 
-An interface for objects that can render something.
-In this context, "rendering" means producing some form of output based on some values.
+Interfaces for rendering interoperability.
+
+## Details
+Like other members of the `Dhii\Output` namespace, interfaces in this package
+are related to producing output, handling related errors, and providing
+convenience around output functionality. Particularly, interfaces in this
+package are at the core of output generation, defining a standard API for
+anything that can render output.
+
+Therefore, output renderers MUST implement `RendererInterface`. If
+`RendererInterface#render()` is unable to produce output,
+a `CouldNotRenderExceptionInterface` MUST be thrown.
+
+### Interfaces
+- [`RendererInterface`] - Represents a renderer, i.e. something that can produce output.
+- [`ContextRendererInterface`] - A renderer that uses context to render.
+- [`BlockInterface`] - A renderer that has access to the render context, and is also [stringable].
+- [`RendererAwareInterface`] - Something that exposes a renderer.
+- [`ContextAwareInterface`] - Something that can have a rendering context retrieved.
+- [`BlockAwareInterface`] - Something that can have a block retrieved.
+- [`RendererExceptionInterface`] - An exception that occurs in relation to a renderer, and is aware of it.
+- [`CouldNotRenderExceptionInterface`] - A specialized renderer exception that signals problems during rendering,
+and is additionally aware of rendering context.
+- [`ContextRenderExceptionInterface`] - A specialized "could-not-render" exception that is aware
+of the rendering context.
+
+
+
+[Dhii]:                                 https://github.com/Dhii/dhii
+[stringable]:                           https://github.com/Dhii/stringable-interface
+
+[`RendererInterface`]:                  src/RendererInterface.php
+[`ContextRendererInterface`]:           src/ContextRendererInterface.php
+[`BlockInterface`]:                     src/BlockInterface.php
+[`RendererAwareInterface`]:             src/RendererAwareInterface.php
+[`ContextAwareInterface`]:              src/ContextAwareInterface.php
+[`BlockAwareInterface`]:                src/BlockAwareInterface.php
+[`RendererExceptionInterface`]:         src/Exception/RendererExceptionInterface.php
+[`CouldNotRenderExceptionInterface`]:   src/Exception/CouldNotRenderExceptionInterface.php
+[`ContextRenderExceptionInterface`]:    src/Exception/ContextRenderExceptionInterface.php
