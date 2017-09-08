@@ -26,8 +26,7 @@ a `CouldNotRenderExceptionInterface` MUST be thrown.
 - [`ContextAwareInterface`] - Something that can have a rendering context retrieved.
 - [`BlockAwareInterface`] - Something that can have a block retrieved.
 - [`RendererExceptionInterface`] - An exception that occurs in relation to a renderer, and is aware of it.
-- [`CouldNotRenderExceptionInterface`] - A specialized renderer exception that signals problems during rendering,
-and is additionally aware of rendering context.
+- [`CouldNotRenderExceptionInterface`] - A specialized renderer exception that signals problems during rendering.
 - [`ContextRenderExceptionInterface`] - A specialized "could-not-render" exception that is aware
 of the rendering context.
 
