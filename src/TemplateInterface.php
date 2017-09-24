@@ -13,14 +13,14 @@ use Dhii\Output\Exception\RendererExceptionInterface;
  * all the data necessary for rendering at the time of
  * rendering.
  *
- * @since 0.1
+ * @since 0.2
  */
 interface TemplateInterface extends RendererInterface
 {
     /**
      * Produce output based on context.
      *
-     * @since 0.1
+     * @since 0.2
      *
      * @param mixed|null $context The context;
      *                            something that can provide more information on how to perform rendering.

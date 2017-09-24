@@ -8,21 +8,21 @@ use Xpmock\TestCase;
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since 0.2
  */
 class TemplateRenderExceptionInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since 0.1
+     * @since 0.2
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\TemplateRenderExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since 0.2
      *
      * @return TestSubject
      */
@@ -47,7 +47,7 @@ class TemplateRenderExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since 0.2
      */
     public function testCanBeCreated()
     {
