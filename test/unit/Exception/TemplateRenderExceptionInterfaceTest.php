@@ -17,7 +17,7 @@ class ContextRenderExceptionInterfaceTest extends TestCase
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\ContextRenderExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\TemplateRenderExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.

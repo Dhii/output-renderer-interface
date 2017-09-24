@@ -20,14 +20,15 @@ a `CouldNotRenderExceptionInterface` MUST be thrown.
 
 ### Interfaces
 - [`RendererInterface`] - Represents a renderer, i.e. something that can produce output.
-- [`ContextRendererInterface`] - A renderer that uses context to render.
+- [`TemplateInterface`] - A renderer that uses context to render.
 - [`BlockInterface`] - A renderer that has access to the render context, and is also [stringable].
 - [`RendererAwareInterface`] - Something that exposes a renderer.
 - [`ContextAwareInterface`] - Something that can have a rendering context retrieved.
 - [`BlockAwareInterface`] - Something that can have a block retrieved.
+- [`TemplateAwareInterface`] - Something that can have a template retrieved.
 - [`RendererExceptionInterface`] - An exception that occurs in relation to a renderer, and is aware of it.
 - [`CouldNotRenderExceptionInterface`] - A specialized renderer exception that signals problems during rendering.
-- [`ContextRenderExceptionInterface`] - A specialized "could-not-render" exception that is aware
+- [`TemplateRenderExceptionInterface`] - A specialized "could-not-render" exception that is aware
 of the rendering context.
 
 
@@ -36,11 +37,12 @@ of the rendering context.
 [stringable]:                           https://github.com/Dhii/stringable-interface
 
 [`RendererInterface`]:                  src/RendererInterface.php
-[`ContextRendererInterface`]:           src/ContextRendererInterface.php
+[`TemplateInterface`]:           src/TemplateInterface.php
 [`BlockInterface`]:                     src/BlockInterface.php
 [`RendererAwareInterface`]:             src/RendererAwareInterface.php
 [`ContextAwareInterface`]:              src/ContextAwareInterface.php
 [`BlockAwareInterface`]:                src/BlockAwareInterface.php
+[`TemplateAwareInterface`]:                src/TemplateAwareInterface.php
 [`RendererExceptionInterface`]:         src/Exception/RendererExceptionInterface.php
 [`CouldNotRenderExceptionInterface`]:   src/Exception/CouldNotRenderExceptionInterface.php
-[`ContextRenderExceptionInterface`]:    src/Exception/ContextRenderExceptionInterface.php
+[`TemplateRenderExceptionInterface`]:    src/Exception/ContextRenderExceptionInterface.php
