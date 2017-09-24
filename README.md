@@ -37,12 +37,12 @@ of the rendering context.
 [stringable]:                           https://github.com/Dhii/stringable-interface
 
 [`RendererInterface`]:                  src/RendererInterface.php
-[`TemplateInterface`]:           src/TemplateInterface.php
+[`TemplateInterface`]:                  src/TemplateInterface.php
 [`BlockInterface`]:                     src/BlockInterface.php
 [`RendererAwareInterface`]:             src/RendererAwareInterface.php
 [`ContextAwareInterface`]:              src/ContextAwareInterface.php
 [`BlockAwareInterface`]:                src/BlockAwareInterface.php
-[`TemplateAwareInterface`]:                src/TemplateAwareInterface.php
+[`TemplateAwareInterface`]:             src/TemplateAwareInterface.php
 [`RendererExceptionInterface`]:         src/Exception/RendererExceptionInterface.php
 [`CouldNotRenderExceptionInterface`]:   src/Exception/CouldNotRenderExceptionInterface.php
-[`TemplateRenderExceptionInterface`]:    src/Exception/ContextRenderExceptionInterface.php
+[`TemplateRenderExceptionInterface`]:   src/Exception/ContextRenderExceptionInterface.php
