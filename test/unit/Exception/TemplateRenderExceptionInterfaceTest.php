@@ -10,7 +10,7 @@ use Xpmock\TestCase;
  *
  * @since 0.1
  */
-class ContextRenderExceptionInterfaceTest extends TestCase
+class TemplateRenderExceptionInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.

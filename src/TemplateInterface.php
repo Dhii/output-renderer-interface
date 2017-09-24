@@ -26,7 +26,7 @@ interface TemplateInterface extends RendererInterface
      *                            something that can provide more information on how to perform rendering.
      *
      * @throws TemplateRenderExceptionInterface If cannot render.
-     * @throws RendererExceptionInterface      Any other problem related to the renderer.
+     * @throws RendererExceptionInterface       Any other problem related to the renderer.
      *
      * @return string|Stringable The output.
      */
