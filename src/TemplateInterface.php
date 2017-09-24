@@ -3,7 +3,7 @@
 namespace Dhii\Output;
 
 use Dhii\Util\String\StringableInterface as Stringable;
-use Dhii\Output\Exception\ContextRenderExceptionInterface;
+use Dhii\Output\Exception\TemplateRenderExceptionInterface;
 use Dhii\Output\Exception\RendererExceptionInterface;
 
 /**
@@ -15,7 +15,7 @@ use Dhii\Output\Exception\RendererExceptionInterface;
  *
  * @since 0.1
  */
-interface ContextRendererInterface extends RendererInterface
+interface TemplateInterface extends RendererInterface
 {
     /**
      * Produce output based on context.
@@ -25,7 +25,7 @@ interface ContextRendererInterface extends RendererInterface
      * @param mixed|null $context The context;
      *                            something that can provide more information on how to perform rendering.
      *
-     * @throws ContextRenderExceptionInterface If cannot render.
+     * @throws TemplateRenderExceptionInterface If cannot render.
      * @throws RendererExceptionInterface      Any other problem related to the renderer.
      *
      * @return string|Stringable The output.

@@ -14,7 +14,7 @@ interface TemplateAwareInterface
      *
      * @since [*next-version*]
      *
-     * @return ContextRendererInterface|null The template, if any.
+     * @return TemplateInterface|null The template, if any.
      */
     public function getTemplate();
 }
