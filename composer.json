@@ -26,5 +26,10 @@
         "psr-4": {
             "Dhii\\Output\\": "src/"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.2.x-dev"
+        }
     }
 }
