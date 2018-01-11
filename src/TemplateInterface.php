@@ -5,6 +5,7 @@ namespace Dhii\Output;
 use Dhii\Util\String\StringableInterface as Stringable;
 use Dhii\Output\Exception\TemplateRenderExceptionInterface;
 use Dhii\Output\Exception\RendererExceptionInterface;
+use Psr\Container\ContainerInterface;
 
 /**
  * Something that can render output based on a context.
@@ -22,8 +23,8 @@ interface TemplateInterface extends RendererInterface
      *
      * @since 0.2
      *
-     * @param mixed|null $context The context;
-     *                            something that can provide more information on how to perform rendering.
+     * @param ContainerInterface|array|null $context The context; something that can provide more information
+     *                                               on how to perform rendering.
      *
      * @throws TemplateRenderExceptionInterface If cannot render.
      * @throws RendererExceptionInterface       Any other problem related to the renderer.
