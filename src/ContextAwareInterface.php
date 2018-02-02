@@ -2,7 +2,9 @@
 
 namespace Dhii\Output;
 
+use ArrayAccess;
 use Psr\Container\ContainerInterface;
+use stdClass;
 
 /**
  * Something that can have a context retrieved from it.
@@ -16,7 +18,7 @@ interface ContextAwareInterface
      *
      * @since 0.1
      *
-     * @return ContainerInterface|array|null The context.
+     * @return array|ArrayAccess|stdClass|ContainerInterface|null The context.
      */
     public function getContext();
 }
