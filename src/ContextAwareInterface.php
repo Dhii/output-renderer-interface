@@ -14,11 +14,11 @@ use stdClass;
 interface ContextAwareInterface
 {
     /**
-     * Retrieves the context.
+     * Retrieves the context associated with this instance.
      *
      * @since 0.1
      *
-     * @return array|ArrayAccess|stdClass|ContainerInterface|null The context.
+     * @return array|ArrayAccess|stdClass|ContainerInterface|null The context associated with this instance.
      */
     public function getContext();
 }
