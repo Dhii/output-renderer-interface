@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [[*next-version*]] - YYYY-MM-DD
+
+## [0.3-alpha2] - 2018-04-05
+### Added
+- `TemplateFactoryInterface`.
+- `BlockFactoryInterface`.
+
 ## [0.3-alpha1] - 2018-04-05
 ### Changed
 - Now also allowing `ArrayAccess` and `stdClass` types as contexts.

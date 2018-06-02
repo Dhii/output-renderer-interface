@@ -21,7 +21,9 @@ a `CouldNotRenderExceptionInterface` MUST be thrown.
 ### Interfaces
 - [`RendererInterface`] - Represents a renderer, i.e. something that can produce output.
 - [`TemplateInterface`] - A renderer that uses context to render.
+- [`TemplateFactoryInterface`] - A factory of templates.
 - [`BlockInterface`] - A renderer that has access to the render context, and is also [stringable].
+- [`BlockFactoryInterface`] - A factory of blocks.
 - [`RendererAwareInterface`] - Something that exposes a renderer.
 - [`ContextAwareInterface`] - Something that can have a rendering context retrieved.
 - [`BlockAwareInterface`] - Something that can have a block retrieved.
@@ -38,7 +40,9 @@ of the rendering context.
 
 [`RendererInterface`]:                  src/RendererInterface.php
 [`TemplateInterface`]:                  src/TemplateInterface.php
+[`TemplateFactoryInterface`]:           src/TemplateFactoryInterface.php
 [`BlockInterface`]:                     src/BlockInterface.php
+[`BlockFactoryInterface`]:              src/BlockFactoryInterface.php
 [`RendererAwareInterface`]:             src/RendererAwareInterface.php
 [`ContextAwareInterface`]:              src/ContextAwareInterface.php
 [`BlockAwareInterface`]:                src/BlockAwareInterface.php
