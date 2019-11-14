@@ -10,5 +10,6 @@ travis.php.ini export-ignore
 .gitignore export-ignore
 composer.lock export-ignore
 phpunit.xml export-ignore
+phpmd.xml export-ignore
 .env.example export-ignore
 docker-compose.yml export-ignore
