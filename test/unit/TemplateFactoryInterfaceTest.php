@@ -8,28 +8,28 @@ use Xpmock\TestCase;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.3
  */
 class TemplateFactoryInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.3
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\TemplateFactoryInterface';
 
     /**
      * The name of the class that represents a generic factory.
      *
-     * @since [*next-version*]
+     * @since 0.3
      */
     const FACTORY_BASE_FQN = 'Dhii\Factory\FactoryInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.3
      *
      * @return TestSubject A new instance of the test subject.
      */
@@ -45,7 +45,7 @@ class TemplateFactoryInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.3
      */
     public function testCanBeCreated()
     {
@@ -64,7 +64,7 @@ class TemplateFactoryInterfaceTest extends TestCase
     /**
      * Tests that the subject has all the required constants.
      *
-     * @since [*next-version*]
+     * @since 0.3
      */
     public function testConstants()
     {
