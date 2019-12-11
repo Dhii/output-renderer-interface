@@ -5,6 +5,22 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+### Removed
+- No longer depending on Dhii exceptions.
+- No longer depending on XPMock.
+- No longer depending on Dhii factory standard.
+- `BlockFactoryInterface` and `TemplateFactoryInterface`.
+
+### Fixed
+- Test subject name for `TemplateRenderExceptionInterface` test.
+
+### Changed
+- Switched to PHP 7.0.
+- Switched to PHPUnit 6.
+
+### Added
+- Docker environment.
+- PHPStorm integrations.
 
 ## [0.3] - 2019-11-14
 Stable release.
