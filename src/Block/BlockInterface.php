@@ -1,7 +1,8 @@
 <?php
 
-namespace Dhii\Output;
+namespace Dhii\Output\Block;
 
+use Dhii\Output\RendererInterface;
 use Dhii\Util\String\StringableInterface;
 
 /**
@@ -10,7 +11,7 @@ use Dhii\Util\String\StringableInterface;
  * Blocks have access to all the data necessary
  * for rendering at the time of rendering.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
 interface BlockInterface extends
         RendererInterface,

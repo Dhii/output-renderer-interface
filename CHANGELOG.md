@@ -33,6 +33,7 @@ Stable release.
 ## [0.3-alpha1] - 2018-04-05
 ### Changed
 - Now also allowing `ArrayAccess` and `stdClass` types as contexts.
+- Moved block- and template-related classes to their own respective directories.
 
 ## [0.2] - 2017-10-04
 Some re-ordering and re-naming mostly.

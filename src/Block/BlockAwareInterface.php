@@ -1,18 +1,18 @@
 <?php
 
-namespace Dhii\Output;
+namespace Dhii\Output\Block;
 
 /**
  * Something that can have a block retrieved from it.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
 interface BlockAwareInterface
 {
     /**
      * Retrieves the block associated with this instance.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
      * @return BlockInterface
      */

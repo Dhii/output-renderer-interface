@@ -1,22 +1,22 @@
 <?php
 
-namespace Dhii\Block\UnitTest;
+namespace Dhii\Block\UnitTest\Block;
 
 use PHPUnit\Framework\TestCase;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
-use Dhii\Output\BlockAwareInterface as TestSubject;
+use Dhii\Output\Block\BlockAwareInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
 class BlockAwareInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
      * @return TestSubject|MockObject
      */
@@ -31,7 +31,7 @@ class BlockAwareInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
