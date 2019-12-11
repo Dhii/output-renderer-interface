@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c98db88522838a1b6ccab2795c55add0",
+    "content-hash": "46f812c8aab62a214d1f814f033d254b",
     "packages": [
         {
             "name": "dhii/exception-interface",

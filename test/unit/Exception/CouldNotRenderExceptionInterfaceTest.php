@@ -3,6 +3,7 @@
 namespace Dhii\Output\Exception\UnitTest;
 
 use Dhii\Output\Exception\CouldNotRenderExceptionInterface as TestSubject;
+use Dhii\Output\Test\GetImplementingMockBuilderCapableTrait;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
 use PHPUnit\Framework\TestCase;
 
@@ -13,6 +14,8 @@ use PHPUnit\Framework\TestCase;
  */
 class CouldNotRenderExceptionInterfaceTest extends TestCase
 {
+    use GetImplementingMockBuilderCapableTrait;
+
     /**
      * Creates a new instance of the test subject.
      *
@@ -22,7 +25,7 @@ class CouldNotRenderExceptionInterfaceTest extends TestCase
      */
     public function createInstance()
     {
-        $mock = $this->getMockBuilder(TestSubject::class)
+        $mock = $this->getImplementingMockBuilder('Exception', [TestSubject::class])
             ->getMock();
 
         return $mock;

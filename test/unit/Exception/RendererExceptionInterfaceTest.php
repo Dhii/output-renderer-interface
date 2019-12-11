@@ -2,6 +2,7 @@
 
 namespace Dhii\Output\Exception\UnitTest;
 
+use Dhii\Output\Test\GetImplementingMockBuilderCapableTrait;
 use Dhii\Output\Exception\RendererExceptionInterface as TestSubject;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
 use PHPUnit\Framework\TestCase;
@@ -13,6 +14,8 @@ use PHPUnit\Framework\TestCase;
  */
 class RendererExceptionInterfaceTest extends TestCase
 {
+    use GetImplementingMockBuilderCapableTrait;
+
     /**
      * Creates a new instance of the test subject.
      *
@@ -22,7 +25,7 @@ class RendererExceptionInterfaceTest extends TestCase
      */
     public function createInstance()
     {
-        $mock = $this->getMockBuilder(TestSubject::class)
+        $mock = $this->getImplementingMockBuilder('Exception', [TestSubject::class])
             ->getMock();
 
         return $mock;
@@ -48,7 +51,7 @@ class RendererExceptionInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\Exception\ThrowableInterface', $subject,
+            'Throwable', $subject,
             'Subject does not extend expected parent interface'
         );
     }
