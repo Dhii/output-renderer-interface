@@ -1,10 +1,11 @@
 <?php
 
-namespace Dhii\Output;
+namespace Dhii\Output\Template;
 
 use ArrayAccess;
 use Dhii\Output\Exception\RendererExceptionInterface;
 use Dhii\Output\Exception\TemplateRenderExceptionInterface;
+use Dhii\Output\RendererInterface;
 use Dhii\Util\String\StringableInterface as Stringable;
 use InvalidArgumentException;
 use Psr\Container\ContainerInterface;
@@ -17,17 +18,17 @@ use stdClass;
  * all the data necessary for rendering at the time of
  * rendering.
  *
- * @since 0.2
+ * @since [*next-version*]
  */
 interface TemplateInterface extends RendererInterface
 {
     /**
      * Produce output based on context.
      *
-     * @since 0.2
+     * @since [*next-version*]
      *
      * @param array|ArrayAccess|stdClass|ContainerInterface|null The context. Something that can provide more
-     *                                                                        information on how to perform rendering.
+     *                                                  information on how to perform rendering.
      *
      * @throws TemplateRenderExceptionInterface If cannot render.
      * @throws RendererExceptionInterface       Any other problem related to the renderer.

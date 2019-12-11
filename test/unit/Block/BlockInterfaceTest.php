@@ -1,22 +1,22 @@
 <?php
 
-namespace Dhii\Output\UnitTest;
+namespace Dhii\Output\UnitTest\Block;
 
-use Dhii\Output\BlockInterface as TestSubject;
+use Dhii\Output\Block\BlockInterface as TestSubject;
 use PHPUnit_Framework_MockObject_MockObject as MockObject;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
 class BlockInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
      * @param string $output
      *
@@ -37,7 +37,7 @@ class BlockInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {
@@ -65,7 +65,7 @@ class BlockInterfaceTest extends TestCase
     /**
      * Tests whether the block can be cast into a string.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCastToString()
     {

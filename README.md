@@ -41,11 +41,11 @@ of the rendering context.
 [`RendererInterface`]:                  src/RendererInterface.php
 [`TemplateInterface`]:                  src/TemplateInterface.php
 [`TemplateFactoryInterface`]:           src/TemplateFactoryInterface.php
-[`BlockInterface`]:                     src/BlockInterface.php
+[`BlockInterface`]:                     src/Block/BlockInterface.php
 [`BlockFactoryInterface`]:              src/BlockFactoryInterface.php
 [`RendererAwareInterface`]:             src/RendererAwareInterface.php
 [`ContextAwareInterface`]:              src/ContextAwareInterface.php
-[`BlockAwareInterface`]:                src/BlockAwareInterface.php
+[`BlockAwareInterface`]:                src/Block/BlockAwareInterface.php
 [`TemplateAwareInterface`]:             src/TemplateAwareInterface.php
 [`RendererExceptionInterface`]:         src/Exception/RendererExceptionInterface.php
 [`CouldNotRenderExceptionInterface`]:   src/Exception/CouldNotRenderExceptionInterface.php

@@ -3,12 +3,12 @@
 namespace Dhii\Output\Exception;
 
 use Dhii\Output\ContextAwareInterface;
-use Dhii\Output\TemplateInterface;
+use Dhii\Output\Template\TemplateInterface;
 
 /**
  * An exception that occurs when cannot render with a context.
  *
- * @since 0.2
+ * @since [*next-version*]
  */
 interface TemplateRenderExceptionInterface extends
     CouldNotRenderExceptionInterface,
@@ -17,9 +17,10 @@ interface TemplateRenderExceptionInterface extends
     /**
      * {@inheritdoc}
      *
-     * @since 0.2
-     * 
      * @return TemplateInterface The renderer.
+     *
+     * @since [*next-version*]
+     *
      */
     public function getRenderer();
 }
