@@ -2,7 +2,8 @@
 
 namespace Dhii\Block\UnitTest;
 
-use Xpmock\TestCase;
+use PHPUnit\Framework\TestCase;
+use PHPUnit_Framework_MockObject_MockObject as MockObject;
 use Dhii\Output\BlockAwareInterface as TestSubject;
 
 /**
@@ -13,24 +14,16 @@ use Dhii\Output\BlockAwareInterface as TestSubject;
 class BlockAwareInterfaceTest extends TestCase
 {
     /**
-     * The class name of the test subject.
-     *
-     * @since 0.1
-     */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\BlockAwareInterface';
-
-    /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return TestSubject
+     * @return TestSubject|MockObject
      */
     public function createInstance()
     {
-        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->getBlock()
-            ->new();
+        $mock = $this->getMockBuilder(TestSubject::class)
+            ->getMock();
 
         return $mock;
     }
@@ -45,7 +38,7 @@ class BlockAwareInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject,
+            TestSubject::class, $subject,
             'A valid instance of the test subject could not be created.'
         );
     }

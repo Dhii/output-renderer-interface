@@ -3,7 +3,8 @@
 namespace Dhii\Output\Exception\UnitTest;
 
 use Dhii\Output\Exception\TemplateRenderExceptionInterface as TestSubject;
-use Xpmock\TestCase;
+use PHPUnit_Framework_MockObject_MockObject as MockObject;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Tests {@see TestSubject}.
@@ -13,35 +14,18 @@ use Xpmock\TestCase;
 class TemplateRenderExceptionInterfaceTest extends TestCase
 {
     /**
-     * The class name of the test subject.
-     *
-     * @since 0.2
-     */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Output\Exception\TemplateRenderExceptionInterface';
-
-    /**
      * Creates a new instance of the test subject.
      *
      * @since 0.2
      *
-     * @return TestSubject
+     * @return TestSubject|MockObject
      */
     public function createInstance()
     {
-        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->getRenderer()
-                ->getContext()
-                // ThrowableInterface
-                ->getMessage()
-                ->getCode()
-                ->getFile()
-                ->getLine()
-                ->getTrace()
-                ->getTraceAsString()
-                ->getPrevious()
-                ->__toString();
+        $mock = $this->getMockBuilder(TestSubject::class)
+            ->getMock();
 
-        return $mock->new();
+        return $mock;
     }
 
     /**
@@ -54,7 +38,7 @@ class TemplateRenderExceptionInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME, $subject,
+            TestSubject::class, $subject,
             'Could not create a valid instance of the test subject.'
         );
 

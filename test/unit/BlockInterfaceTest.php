@@ -3,7 +3,8 @@
 namespace Dhii\Output\UnitTest;
 
 use Dhii\Output\BlockInterface as TestSubject;
-use Xpmock\TestCase;
+use PHPUnit_Framework_MockObject_MockObject as MockObject;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Tests {@see TestSubject}.
@@ -13,27 +14,22 @@ use Xpmock\TestCase;
 class BlockInterfaceTest extends TestCase
 {
     /**
-     * The name of the test subject.
-     *
-     * @since 0.1
-     */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Output\\BlockInterface';
-
-    /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
      * @param string $output
      *
-     * @return TestSubject
+     * @return TestSubject|MockObject
      */
     public function createInstance($output = '')
     {
-        $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-                ->render()
-                ->__toString($output)
-                ->new();
+        $mock = $this->getMockBuilder(TestSubject::class)
+            ->setMethods([]) // all
+            ->getMock();
+
+        $mock->method('__toString')
+            ->will($this->returnValue($output));
 
         return $mock;
     }
@@ -48,7 +44,7 @@ class BlockInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(
-            static::TEST_SUBJECT_CLASSNAME,
+            TestSubject::class,
             $subject,
             'Subject is not a valid instance.'
         );
