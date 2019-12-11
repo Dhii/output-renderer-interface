@@ -2,7 +2,7 @@
 
 namespace Dhii\Output\Exception\UnitTest;
 
-use Dhii\Output\Exception\ContextAwareRenderExceptionInterface as TestSubject;
+use Dhii\Output\Exception\TemplateRenderExceptionInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
