@@ -9,7 +9,6 @@ use Dhii\Output\RendererInterface;
 use Dhii\Util\String\StringableInterface as Stringable;
 use InvalidArgumentException;
 use Psr\Container\ContainerInterface;
-use stdClass;
 
 /**
  * Something that can render output based on a context.
@@ -27,7 +26,7 @@ interface TemplateInterface extends RendererInterface
      *
      * @since [*next-version*]
      *
-     * @param array|ArrayAccess|stdClass|ContainerInterface|null The context. Something that can provide more
+     * @param array|ArrayAccess|ContainerInterface|null The context. Something that can provide more
      *                                                  information on how to perform rendering.
      *
      * @throws TemplateRenderExceptionInterface If cannot render.
