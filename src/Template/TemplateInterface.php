@@ -7,6 +7,7 @@ use Dhii\Output\Exception\RendererExceptionInterface;
 use Dhii\Output\Exception\TemplateRenderExceptionInterface;
 use Dhii\Output\RendererInterface;
 use Dhii\Util\String\StringableInterface as Stringable;
+use Exception;
 use InvalidArgumentException;
 use Psr\Container\ContainerInterface;
 
@@ -32,6 +33,7 @@ interface TemplateInterface extends RendererInterface
      * @throws TemplateRenderExceptionInterface If cannot render.
      * @throws RendererExceptionInterface       Any other problem related to the renderer.
      * @throws InvalidArgumentException         If context is invalid.
+     * @throws Exception                        Any other problem.
      *
      * @return string|Stringable The output.
      */

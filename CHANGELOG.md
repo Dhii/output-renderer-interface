@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Docker environment.
 - PHPStorm integrations.
+- Renderers can now throw `Exception` while rendering.
 
 ## [0.3] - 2019-11-14
 Stable release.
