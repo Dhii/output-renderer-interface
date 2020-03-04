@@ -3,7 +3,7 @@
 namespace Dhii\Output\Template;
 
 /**
- * Something that can create templates from a path.
+ * Something that can create templates from a string.
  *
  * @since [*next-version*]
  */
