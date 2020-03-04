@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [[*next-version*]] - YYYY-MM-DD
+## [0.4-alpha1] - YYYY-MM-DD
 ### Removed
 - No longer depending on Dhii exceptions.
 - No longer depending on XPMock.

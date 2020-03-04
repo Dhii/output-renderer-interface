@@ -5,7 +5,7 @@ namespace Dhii\Output\Block;
 /**
  * Something that can create blocks based on a string.
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 interface StringBlockFactoryInterface
 {
@@ -15,7 +15,7 @@ interface StringBlockFactoryInterface
      * @param string $string The string
      * @return BlockInterface The new block.
      *
-     * @since [*next-version*]
+     * @since 0.4
      */
     public function fromString(string $string): BlockInterface;
 }

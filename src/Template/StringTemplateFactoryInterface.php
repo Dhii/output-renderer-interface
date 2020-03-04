@@ -5,7 +5,7 @@ namespace Dhii\Output\Template;
 /**
  * Something that can create templates from a string.
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 interface StringTemplateFactoryInterface
 {
@@ -18,7 +18,7 @@ interface StringTemplateFactoryInterface
      *
      * @return TemplateInterface The new template.
      *
-     * @since [*next-version*]
+     * @since 0.4
      */
     public function fromString(string $template): TemplateInterface;
 }

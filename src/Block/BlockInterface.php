@@ -11,7 +11,7 @@ use Dhii\Util\String\StringableInterface;
  * Blocks have access to all the data necessary
  * for rendering at the time of rendering.
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 interface BlockInterface extends
         RendererInterface,

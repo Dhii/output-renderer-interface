@@ -9,14 +9,14 @@ use PHPUnit\Framework\TestCase;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 class BlockInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.4
      *
      * @param string $output
      *
@@ -37,7 +37,7 @@ class BlockInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.4
      */
     public function testCanBeCreated()
     {
@@ -65,7 +65,7 @@ class BlockInterfaceTest extends TestCase
     /**
      * Tests whether the block can be cast into a string.
      *
-     * @since [*next-version*]
+     * @since 0.4
      */
     public function testCanBeCastToString()
     {

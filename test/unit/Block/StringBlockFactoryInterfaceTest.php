@@ -9,14 +9,14 @@ use Dhii\Output\Block\StringBlockFactoryInterface as TestSubject;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 class StringBlockFactoryInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.4
      *
      * @return TestSubject|MockObject
      */
@@ -31,7 +31,7 @@ class StringBlockFactoryInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.4
      */
     public function testCanBeCreated()
     {

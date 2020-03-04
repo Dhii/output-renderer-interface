@@ -8,7 +8,7 @@ use Dhii\Output\Template\TemplateInterface;
 /**
  * An exception that occurs when cannot render with a context.
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 interface TemplateRenderExceptionInterface extends
     CouldNotRenderExceptionInterface,
@@ -19,7 +19,7 @@ interface TemplateRenderExceptionInterface extends
      *
      * @return TemplateInterface The renderer.
      *
-     * @since [*next-version*]
+     * @since 0.4
      *
      */
     public function getRenderer();

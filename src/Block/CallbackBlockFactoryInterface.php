@@ -5,7 +5,7 @@ namespace Dhii\Output\Block;
 /**
  * Something that can create blocks based on a callable.
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 interface CallbackBlockFactoryInterface
 {
@@ -17,7 +17,7 @@ interface CallbackBlockFactoryInterface
      * Receives the instance of the factory that created the block.
      * @return BlockInterface The new block.
      *
-     * @since [*next-version*]
+     * @since 0.4
      */
     public function fromCallback(callable $callback): BlockInterface;
 }

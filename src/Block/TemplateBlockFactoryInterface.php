@@ -9,7 +9,7 @@ use Psr\Container\ContainerInterface;
 /**
  * Something that can create blocks based on a template
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 interface TemplateBlockFactoryInterface
 {
@@ -20,7 +20,7 @@ interface TemplateBlockFactoryInterface
      * @param array|ArrayAccess|ContainerInterface|null $context The context to use for the template.
      * @return BlockInterface The new block.
      *
-     * @since [*next-version*]
+     * @since 0.4
      */
     public function fromTemplate(TemplateInterface $template, $context): BlockInterface;
 }

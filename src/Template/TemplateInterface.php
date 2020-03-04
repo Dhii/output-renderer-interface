@@ -18,14 +18,14 @@ use Psr\Container\ContainerInterface;
  * all the data necessary for rendering at the time of
  * rendering.
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 interface TemplateInterface extends RendererInterface
 {
     /**
      * Produce output based on context.
      *
-     * @since [*next-version*]
+     * @since 0.4
      *
      * @param array|ArrayAccess|ContainerInterface|null The context. Something that can provide more
      *                                                  information on how to perform rendering.

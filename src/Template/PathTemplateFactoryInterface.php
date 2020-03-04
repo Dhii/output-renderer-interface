@@ -5,7 +5,7 @@ namespace Dhii\Output\Template;
 /**
  * Something that can create templates from a path.
  *
- * @since [*next-version*]
+ * @since 0.4
  */
 interface PathTemplateFactoryInterface
 {
@@ -17,7 +17,7 @@ interface PathTemplateFactoryInterface
      *
      * @return TemplateInterface The new template.
      *
-     * @since [*next-version*]
+     * @since 0.4
      */
     public function fromPath(string $templatePath): TemplateInterface;
 }
