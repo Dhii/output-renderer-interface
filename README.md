@@ -1,9 +1,8 @@
 # Dhii - Output - Renderer - Interface
-[![Build Status](https://travis-ci.org/Dhii/output-renderer-interface.svg?branch=master)](https://travis-ci.org/Dhii/output-renderer-interface)
+[![Build Status](https://travis-ci.org/Dhii/output-renderer-interface.svg?branch=develop)](https://travis-ci.org/Dhii/output-renderer-interface)
 [![Code Climate](https://codeclimate.com/github/Dhii/output-renderer-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/output-renderer-interface)
 [![Test Coverage](https://codeclimate.com/github/Dhii/output-renderer-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/output-renderer-interface/coverage)
 [![Latest Stable Version](https://poser.pugx.org/dhii/output-renderer-interface/version)](https://packagist.org/packages/dhii/output-renderer-interface)
-[![This package complies with Dhii standards](https://img.shields.io/badge/Dhii-Compliant-green.svg?style=flat-square)][Dhii]
 
 Interfaces for rendering interoperability.
 
@@ -21,9 +20,12 @@ a `CouldNotRenderExceptionInterface` MUST be thrown.
 ### Interfaces
 - [`RendererInterface`] - Represents a renderer, i.e. something that can produce output.
 - [`TemplateInterface`] - A renderer that uses context to render.
-- [`TemplateFactoryInterface`] - A factory of templates.
+- [`PathTemplateFactoryInterface`] - A factory that creates templates from paths.
+- [`StringTemplateFactoryInterface`] - A factory that creates templates from strings.
 - [`BlockInterface`] - A renderer that has access to the render context, and is also [stringable].
-- [`BlockFactoryInterface`] - A factory of blocks.
+- [`CallbackBlockFactoryInterface`] - A factory that creates blocks from callbacks.
+- [`StringBlockFactoryInterface`] - A factory that creates blocks from strings.
+- [`TemplateBlockFactoryInterface`] - A factory that creates blocks from templates.
 - [`RendererAwareInterface`] - Something that exposes a renderer.
 - [`ContextAwareInterface`] - Something that can have a rendering context retrieved.
 - [`BlockAwareInterface`] - Something that can have a block retrieved.
@@ -39,14 +41,17 @@ of the rendering context.
 [stringable]:                           https://github.com/Dhii/stringable-interface
 
 [`RendererInterface`]:                  src/RendererInterface.php
-[`TemplateInterface`]:                  src/TemplateInterface.php
-[`TemplateFactoryInterface`]:           src/TemplateFactoryInterface.php
+[`TemplateInterface`]:                  src/Template/TemplateInterface.php
+[`PathTemplateFactoryInterface`]:       src/Template/PathTemplateFactoryInterface.php
+[`StringTemplateFactoryInterface`]:     src/Template/StringTemplateFactoryInterface.php
 [`BlockInterface`]:                     src/Block/BlockInterface.php
-[`BlockFactoryInterface`]:              src/BlockFactoryInterface.php
+[`CallbackBlockFactoryInterface`]:      src/Block/BlockFactoryInterface.php
+[`StringBlockFactoryInterface`]:        src/Block/StringBlockFactoryInterface.php
+[`TemplateBlockFactoryInterface`]:      src/Block/TemplateBlockFactoryInterface.php
 [`RendererAwareInterface`]:             src/RendererAwareInterface.php
 [`ContextAwareInterface`]:              src/ContextAwareInterface.php
 [`BlockAwareInterface`]:                src/Block/BlockAwareInterface.php
-[`TemplateAwareInterface`]:             src/TemplateAwareInterface.php
+[`TemplateAwareInterface`]:             src/Template/TemplateAwareInterface.php
 [`RendererExceptionInterface`]:         src/Exception/RendererExceptionInterface.php
 [`CouldNotRenderExceptionInterface`]:   src/Exception/CouldNotRenderExceptionInterface.php
 [`TemplateRenderExceptionInterface`]:   src/Exception/ContextRenderExceptionInterface.php
