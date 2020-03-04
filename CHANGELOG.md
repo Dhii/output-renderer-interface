@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - No longer depending on XPMock.
 - No longer depending on Dhii factory standard.
 - `BlockFactoryInterface` and `TemplateFactoryInterface`.
+- Support for PHP 5.x.
+- Rendering context can no longer be a class e.g. `stdClass`.
 
 ### Fixed
 - Test subject name for `TemplateRenderExceptionInterface` test.
@@ -17,11 +19,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Switched to PHP 7.0.
 - Switched to PHPUnit 6.
+- Renderers can now throw generic `Exception`.
 
 ### Added
 - Docker environment.
 - PHPStorm integrations.
 - Renderers can now throw `Exception` while rendering.
+- Specific factory interfaces for blocks and templates.
 
 ## [0.3] - 2019-11-14
 Stable release.
