@@ -40,6 +40,6 @@
         }
     },
     "suggest": {
-        "dhii/container-helper-base": "Useful for reading data from different context types uniformly"
+        "psr/container": "To use PSR-11 containers as context"
     }
 }
