@@ -1,17 +1,17 @@
 <?php
 
-namespace Dhii\Block\UnitTest\Block;
+namespace Dhii\Output\UnitTest\Block;
 
 use PHPUnit\Framework\TestCase;
-use PHPUnit_Framework_MockObject_MockObject as MockObject;
-use Dhii\Output\Block\CallbackBlockFactoryInterface as TestSubject;
+use PHPUnit\Framework\MockObject\MockObject as MockObject;
+use Dhii\Output\Block\TemplateBlockFactoryInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since 0.4
  */
-class CallbackBlockFactoryInterfaceTest extends TestCase
+class TemplateBlockFactoryInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.

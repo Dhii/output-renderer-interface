@@ -1,10 +1,10 @@
 <?php
 
-namespace Dhii\Output\Exception\UnitTest;
+namespace Dhii\Output\UnitTest\Exception;
 
 use Dhii\Output\Test\GetImplementingMockBuilderCapableTrait;
 use Dhii\Output\Exception\RendererExceptionInterface as TestSubject;
-use PHPUnit_Framework_MockObject_MockObject as MockObject;
+use PHPUnit\Framework\MockObject\MockObject as MockObject;
 use PHPUnit\Framework\TestCase;
 
 /**

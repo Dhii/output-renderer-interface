@@ -1,24 +1,24 @@
 <?php
 
-namespace Dhii\Block\UnitTest\Template;
+namespace Dhii\Output\UnitTest\Template;
 
+use Dhii\Output\Template\TemplateInterface as TestSubject;
+use PHPUnit\Framework\MockObject\MockObject as MockObject;
 use PHPUnit\Framework\TestCase;
-use PHPUnit_Framework_MockObject_MockObject as MockObject;
-use Dhii\Output\Template\PathTemplateFactoryInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since 0.4
  */
-class StringTemplateFactoryInterfaceTest extends TestCase
+class TemplateInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.4
      *
-     * @return TestSubject|MockObject
+     * @return TestSubject|MockObject A new instance of the test subject.
      */
     public function createInstance()
     {
@@ -39,7 +39,7 @@ class StringTemplateFactoryInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             TestSubject::class, $subject,
-            'A valid instance of the test subject could not be created.'
+            'Could not create a valid instance of the test subject.'
         );
     }
 }

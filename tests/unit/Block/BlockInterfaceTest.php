@@ -3,7 +3,7 @@
 namespace Dhii\Output\UnitTest\Block;
 
 use Dhii\Output\Block\BlockInterface as TestSubject;
-use PHPUnit_Framework_MockObject_MockObject as MockObject;
+use PHPUnit\Framework\MockObject\MockObject as MockObject;
 use PHPUnit\Framework\TestCase;
 
 /**

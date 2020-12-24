@@ -1,25 +1,25 @@
 <?php
 
-namespace Dhii\Output\Exception\UnitTest;
+namespace Dhii\Output\UnitTest\Exception;
 
-use Dhii\Output\Exception\TemplateRenderExceptionInterface as TestSubject;
+use Dhii\Output\Exception\CouldNotRenderExceptionInterface as TestSubject;
 use Dhii\Output\Test\GetImplementingMockBuilderCapableTrait;
-use PHPUnit_Framework_MockObject_MockObject as MockObject;
+use PHPUnit\Framework\MockObject\MockObject as MockObject;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.2
+ * @since 0.1
  */
-class TemplateRenderExceptionInterfaceTest extends TestCase
+class CouldNotRenderExceptionInterfaceTest extends TestCase
 {
     use GetImplementingMockBuilderCapableTrait;
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.2
+     * @since 0.1
      *
      * @return TestSubject|MockObject
      */
@@ -34,7 +34,7 @@ class TemplateRenderExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.2
+     * @since 0.1
      */
     public function testCanBeCreated()
     {
@@ -46,7 +46,7 @@ class TemplateRenderExceptionInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\Output\Exception\CouldNotRenderExceptionInterface', $subject,
+            'Dhii\Output\Exception\RendererExceptionInterface', $subject,
             'Subject does not extend expected parent interface'
         );
     }

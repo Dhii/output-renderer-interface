@@ -1,22 +1,22 @@
 <?php
 
-namespace Dhii\Output\UnitTest;
+namespace Dhii\Output\UnitTest\Template;
 
-use Dhii\Output\RendererInterface as TestSubject;
-use PHPUnit_Framework_MockObject_MockObject as MockObject;
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\MockObject\MockObject as MockObject;
+use Dhii\Output\Template\PathTemplateFactoryInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since 0.4
  */
-class RendererInterfaceTest extends TestCase
+class StringTemplateFactoryInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since 0.4
      *
      * @return TestSubject|MockObject
      */
@@ -31,7 +31,7 @@ class RendererInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since 0.1
+     * @since 0.4
      */
     public function testCanBeCreated()
     {
@@ -39,7 +39,7 @@ class RendererInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             TestSubject::class, $subject,
-            'Could not create a valid instance of the test subject.'
+            'A valid instance of the test subject could not be created.'
         );
     }
 }

@@ -1,17 +1,17 @@
 <?php
 
-namespace Dhii\Output\UnitTest\Template;
+namespace Dhii\Output\UnitTest\Block;
 
 use PHPUnit\Framework\TestCase;
-use PHPUnit_Framework_MockObject_MockObject as MockObject;
-use Dhii\Output\Template\TemplateAwareInterface as TestSubject;
+use PHPUnit\Framework\MockObject\MockObject as MockObject;
+use Dhii\Output\Block\CallbackBlockFactoryInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
  * @since 0.4
  */
-class TemplateAwareInterfaceTest extends TestCase
+class CallbackBlockFactoryInterfaceTest extends TestCase
 {
     /**
      * Creates a new instance of the test subject.
@@ -39,7 +39,7 @@ class TemplateAwareInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             TestSubject::class, $subject,
-            'Could not create a valid instance of the test subject.'
+            'A valid instance of the test subject could not be created.'
         );
     }
 }
