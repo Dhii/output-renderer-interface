@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Output\Block;
 
 use Dhii\Output\RendererInterface;
@@ -14,7 +16,7 @@ use Stringable;
  * @since 0.4
  */
 interface BlockInterface extends
-        RendererInterface,
-        Stringable
+    RendererInterface,
+    Stringable
 {
 }

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Output\Template;
 
 use Dhii\Output\Template\TemplateInterface;
@@ -18,5 +20,5 @@ interface TemplateAwareInterface
      *
      * @return TemplateInterface|null The template, if any.
      */
-    public function getTemplate();
+    public function getTemplate(): ?TemplateInterface;
 }

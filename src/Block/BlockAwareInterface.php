@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Output\Block;
 
 /**
@@ -14,7 +16,6 @@ interface BlockAwareInterface
      *
      * @since 0.4
      *
-     * @return BlockInterface
      */
-    public function getBlock();
+    public function getBlock(): BlockInterface;
 }

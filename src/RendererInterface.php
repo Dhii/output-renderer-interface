@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Output;
 
 use Dhii\Output\Exception\CouldNotRenderExceptionInterface;

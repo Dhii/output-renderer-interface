@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Output\Exception;
 
 use Dhii\Output\RendererAwareInterface;
@@ -11,7 +13,7 @@ use Throwable;
  * @since 0.1
  */
 interface RendererExceptionInterface extends
-        Throwable,
-        RendererAwareInterface
+    Throwable,
+    RendererAwareInterface
 {
 }
