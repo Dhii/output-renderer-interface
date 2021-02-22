@@ -12,17 +12,14 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^5.3 | ^7.0",
-        "dhii/exception-interface": "^0.1 | ^0.2",
-        "dhii/stringable-interface": "^0.1",
-        "dhii/factory-interface": "^0.1-alpha2"
+        "php": "^7.1 | ^8.0"
     },
     "require-dev": {
-        "dhii/php-cs-fixer-config": "dev-php-5.3",
-        "phpunit/phpunit": "4.*",
-        "codeclimate/php-test-reporter": "dev-master",
-        "ptrofimov/xpmock": "^1.1",
-        "psr/container": "^1.0"
+        "phpunit/phpunit": "^6.0 | ^7.0 | ^8.0 | ^9.0",
+        "psr/container": "^1.0",
+        "vimeo/psalm": "^3.11.7 | ^4",
+        "slevomat/coding-standard": "^6.0",
+        "symfony/polyfill-php80": "^1.19"
     },
     "autoload": {
         "psr-4": {
@@ -31,8 +28,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Dhii\\Output\\UnitTest\\": "test/unit",
-            "Dhii\\Output\\FuncTest\\": "test/functional"
+            "Dhii\\Output\\UnitTest\\": "tests/unit",
+            "Dhii\\Output\\FuncTest\\": "tests/functional",
+            "Dhii\\Output\\Test\\": "tests/stubs"
         }
     },
     "extra": {
@@ -42,6 +40,6 @@
         }
     },
     "suggest": {
-        "dhii/container-helper-base": "Useful for reading data from different context types uniformly"
+        "psr/container": "To use PSR-11 containers as context"
     }
 }

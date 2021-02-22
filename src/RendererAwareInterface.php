@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Output;
 
 /**
@@ -16,5 +18,5 @@ interface RendererAwareInterface
      *
      * @return RendererInterface The renderer.
      */
-    public function getRenderer();
+    public function getRenderer(): RendererInterface;
 }

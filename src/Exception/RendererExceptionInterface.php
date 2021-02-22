@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Dhii\Output\Exception;
 
 use Dhii\Output\RendererAwareInterface;
-use Dhii\Exception\ThrowableInterface;
+use Throwable;
 
 /**
  * An exception that occurs in relation to a renderer.
@@ -11,7 +13,7 @@ use Dhii\Exception\ThrowableInterface;
  * @since 0.1
  */
 interface RendererExceptionInterface extends
-        ThrowableInterface,
-        RendererAwareInterface
+    Throwable,
+    RendererAwareInterface
 {
 }
