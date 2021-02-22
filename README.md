@@ -1,8 +1,7 @@
 # Dhii - Output - Renderer - Interface
-[![Build Status](https://travis-ci.org/Dhii/output-renderer-interface.svg?branch=develop)](https://travis-ci.org/Dhii/output-renderer-interface)
-[![Code Climate](https://codeclimate.com/github/Dhii/output-renderer-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/output-renderer-interface)
-[![Test Coverage](https://codeclimate.com/github/Dhii/output-renderer-interface/badges/coverage.svg)](https://codeclimate.com/github/Dhii/output-renderer-interface/coverage)
+[![Continuous Integration](https://github.com/Dhii/delimited-token-template/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/Dhii/delimited-token-template/actions/workflows/continuous-integration.yml)
 [![Latest Stable Version](https://poser.pugx.org/dhii/output-renderer-interface/version)](https://packagist.org/packages/dhii/output-renderer-interface)
+[![Latest Unstable Version](https://poser.pugx.org/dhii/output-renderer-interface/v/unstable)](//packagist.org/packages/dhii/output-renderer-interface)
 
 Interfaces for rendering interoperability.
 
