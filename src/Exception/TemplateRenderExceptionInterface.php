@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Dhii\Output\Exception;
 
 use Dhii\Output\ContextAwareInterface;
+use Dhii\Output\RendererInterface;
 use Dhii\Output\Template\TemplateInterface;
 
 /**
@@ -24,5 +25,5 @@ interface TemplateRenderExceptionInterface extends
      * @since 0.4
      *
      */
-    public function getRenderer();
+    public function getRenderer(): RendererInterface;
 }

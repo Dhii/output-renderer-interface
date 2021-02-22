@@ -6,9 +6,11 @@ namespace Dhii\Output;
 
 use ArrayAccess;
 use Psr\Container\ContainerInterface;
+use Stringable;
 
 /**
  * Something that can have a context retrieved from it.
+ * @psalm-type Context = array<scalar|Stringable>|ArrayAccess|ContainerInterface
  *
  * @since 0.1
  */
@@ -19,7 +21,8 @@ interface ContextAwareInterface
      *
      * @since 0.1
      *
-     * @return array|ArrayAccess|ContainerInterface|null The context associated with this instance.
+     * @return Context|null The context associated with this instance.
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint
      */
     public function getContext();
 }

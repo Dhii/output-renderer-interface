@@ -21,6 +21,7 @@ use Psr\Container\ContainerInterface;
  * rendering.
  *
  * @since 0.4
+ * @psalm-type Context = array<scalar|Stringable>|ArrayAccess|ContainerInterface
  */
 interface TemplateInterface extends RendererInterface
 {
@@ -29,7 +30,7 @@ interface TemplateInterface extends RendererInterface
      *
      * @since 0.4
      *
-     * @param array|ArrayAccess|ContainerInterface|null The context. Something that can provide more
+     * @param Context|null The context. Something that can provide more
      *                                                  information on how to perform rendering.
      *
      * @throws TemplateRenderExceptionInterface If cannot render.
@@ -38,6 +39,7 @@ interface TemplateInterface extends RendererInterface
      * @throws Exception                        Any other problem.
      *
      * @return string|Stringable The output.
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint
      */
     public function render($context = null);
 }
