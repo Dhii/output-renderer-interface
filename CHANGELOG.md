@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Test subject name for `TemplateRenderExceptionInterface` test.
 
 ### Changed
-- Switched to PHP 7.0.
+- Switched to PHP 7.1.
 - Switched to PHPUnit 6.
 - Renderers can now throw generic `Exception`.
 
