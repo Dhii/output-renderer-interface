@@ -2,10 +2,10 @@
 
 namespace Dhii\Output;
 
-use Dhii\Util\String\StringableInterface as Stringable;
 use Dhii\Output\Exception\CouldNotRenderExceptionInterface;
 use Dhii\Output\Exception\RendererExceptionInterface;
 use Exception;
+use Stringable;
 
 /**
  * Something that can produce output.

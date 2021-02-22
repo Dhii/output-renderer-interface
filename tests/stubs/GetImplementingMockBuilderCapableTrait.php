@@ -35,12 +35,4 @@ trait GetImplementingMockBuilderCapableTrait
 
         return $this->getMockBuilder($className);
     }
-
-    /**
-     * Retrieves a mock builder for the specified classname.
-     *
-     * @param string $className
-     * @return MockBuilder The builder.
-     */
-    abstract public function getMockBuilder($className);
 }

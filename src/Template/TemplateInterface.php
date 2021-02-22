@@ -6,8 +6,8 @@ use ArrayAccess;
 use Dhii\Output\Exception\RendererExceptionInterface;
 use Dhii\Output\Exception\TemplateRenderExceptionInterface;
 use Dhii\Output\RendererInterface;
-use Dhii\Util\String\StringableInterface as Stringable;
 use Exception;
+use Stringable;
 use InvalidArgumentException;
 use Psr\Container\ContainerInterface;
 

@@ -50,7 +50,7 @@ class BlockInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\Util\String\StringableInterface',
+            'Stringable',
             $subject,
             'Subject does not implement required interface'
         );

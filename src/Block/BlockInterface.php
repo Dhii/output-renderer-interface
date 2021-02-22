@@ -3,7 +3,7 @@
 namespace Dhii\Output\Block;
 
 use Dhii\Output\RendererInterface;
-use Dhii\Util\String\StringableInterface;
+use Stringable;
 
 /**
  * Represents a unit of output.
@@ -15,6 +15,6 @@ use Dhii\Util\String\StringableInterface;
  */
 interface BlockInterface extends
         RendererInterface,
-        StringableInterface
+        Stringable
 {
 }
